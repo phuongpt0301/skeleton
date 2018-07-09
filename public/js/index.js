@@ -17,6 +17,37 @@ $(document).ready(function() {
 	$('.icon-more').on('click', function(e) {
 		e.preventDefault();
 
-		$()
+
+		if($('.blocks-hide').is(":visible")) {
+			$('.blocks-hide').hide();
+			$('.blocks-show').show();
+		} else {
+			$('.blocks-hide').show();
+			$('.blocks-show').hide();
+		}
+	});
+});
+
+//contact click
+$(document).ready(function() {
+	$('.team-name').on('click', function(e) {
+		e.preventDefault();
+
+		if($(this).children().hasClass('arrow-down')) {
+			$(this).find('.arrow-down').removeClass('arrow-down').addClass('arrow-up');
+		} else {
+			$(this).find('.arrow-up').removeClass('arrow-up').addClass('arrow-down');
+		}
+
+		$(this).siblings('.content-toggle').toggle();
 	})
-})
+});
+
+//detail link hover
+$(document).ready(function() {
+	$('.category-container .navbar-wrapper li a').hover(function() {
+		$('.category-container .navbar-wrapper li p').css('visibility', 'hidden');
+	}, function() {
+		$('.category-container .navbar-wrapper li p').css('visibility', 'visible');
+	})
+});
