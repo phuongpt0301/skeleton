@@ -9,7 +9,10 @@ body {
 	padding: 0;
   	margin: 0;
   	display: flex;
-  	font-family: 'Nunito', sans-serif;
+  	font-family: "Graphik Cond Web";
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
   	background-color: #FFFFFF;
 }
 .page-container {
@@ -47,11 +50,11 @@ a, p {
 }
 
 .navbar li a {
-	font-family: Graphik;
+    font-family: "Graphik Cond Web";
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
 	font-size: 16px;
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
 	line-height: 1.5em;
 	letter-spacing: normal;
 	color: #FFFFFF;
@@ -137,6 +140,7 @@ ul.nav > li.title {
 	}
 	.navbar-wrapper li p {
 		line-height: 18px;
+		letter-spacing: 0.04em;
 	}
 	.logo-area a {
 		background: url("../../images/logo20x20.png");
@@ -152,16 +156,25 @@ ul.nav > li.title {
 		padding: 0 15px;
 	}
 	.content-area .title {
-		margin: 0 0 30px 98px;
+		margin-left: 108px;
 	}
 	.navbar-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 78px;
+		margin: 0 88px;
 	}
 	.navbar-wrapper li {
 		padding: 20px;
 		width: 40%;
+	}
+	.navbar-wrapper li a {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 5px;
+		display: block;
+	}
+	.navbar-wrapper li a:hover, .navbar-wrapper li a:focus {
+		text-decoration: underline;
 	}
 	.logo-area a {
 		background: url("../../images/logo30x30.png");

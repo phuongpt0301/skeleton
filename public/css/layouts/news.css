@@ -11,9 +11,9 @@ body {
   	display: flex;
 	background-color: #FFFFFF;
 	font-family: "Graphik Cond Web";
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
 }
 .page-container {
   width: 100%;
@@ -129,10 +129,13 @@ ul.nav > li.title {
 .tags {
 	color: #777C7F;
 	font-size: 12px;
-	line-height: 1.4em;
+	line-height: 18px;
 }
 .navbar-wrapper li a:hover, .navbar-wrapper li a:focus {
 	text-decoration: underline;
+}
+.bg-shadown {
+	position: fixed;
 }
 @media only screen and (max-width : 320px) {
 	.content-area {
@@ -200,19 +203,29 @@ ul.nav > li.title {
 		padding: 0 15px;
 	}
 	.content-area .title {
-		margin: 0 0 30px 98px;
+		margin: 0 0 60px 108px;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.navbar-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 78px;
+		margin: 0 88px;
 	}
 	.navbar-wrapper li {
 		padding: 20px;
 		width: 40%;
 	}
+	.navbar-wrapper li:nth-child(n+3) {
+		padding: 25px 20px;
+	}
+	.navbar-wrapper li a {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 10.71px;	
+	}
 	.logo-area a {
-		background: url("../../images/logo30x30.png");
+		background: url("../../images/logo-black-30x30.png");
 		width: 30px;
 		height: 30px;
 		margin: 30px 0 0 30px;
@@ -235,10 +248,16 @@ ul.nav > li.title {
 		height: 16px;
 		display: inline-block;
 	}
+	.icon-brand-new {
+		background: url("../../images/icon-brand-new-16x16.png");
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+	}
 	.resource-area {
 		display: flex;
 		align-items: center;
-		margin-top: 10px;
+		margin-top: 9px;
 		font-size: 16px;
 	}
 	.resource-area i {

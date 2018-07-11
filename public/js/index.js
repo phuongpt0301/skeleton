@@ -51,3 +51,13 @@ $(document).ready(function() {
 		$('.category-container .navbar-wrapper li p').css('visibility', 'visible');
 	})
 });
+
+//news link click
+$(document).ready(function() {
+	var posX = 0;
+	$('.navbar-wrapper li a').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).parent().siblings().css({opacity: .3});
+	});
+})

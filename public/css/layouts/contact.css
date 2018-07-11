@@ -102,12 +102,9 @@ ul.nav>li {
 .title {
     font-size: 16px;
 }
-
-.contact-title,
-.contact-slogan {
-    padding: 30px 15px;
+.contact-title, .contact-slogan {
+    color: #0D0D0D;
 }
-
 .tabs-wrapper {
     margin-bottom: 37px;
 }
@@ -121,7 +118,7 @@ ul.nav>li {
     opacity: .3;
 }
 
-.tabs-wrapper li.active {
+.tabs-wrapper li.active, .tabs-wrapper li:hover {
     opacity: 1;
 }
 
@@ -129,7 +126,7 @@ ul.nav>li {
     content: '';
     margin-top: 2px;
     display: block;
-    height: 1px;
+    height: 2px;
     background-color: #000000;
 }
 
@@ -214,7 +211,7 @@ li>p.title {
 }
 
 .carrers-area>li>p.short-content {
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 24px;
     margin-bottom: 15px;
 }
@@ -277,7 +274,7 @@ li>p.dates-area {
         background: url("../../images/logo-black-20x20.png");
         width: 20px;
         height: 20px;
-        margin: 15px;
+        margin: 15px 15px 45px;
     }
     .xs-show {
         display: block;
@@ -285,6 +282,14 @@ li>p.dates-area {
     .md-hide,
     .lg-hide {
         display: none
+    }
+    .contact-title {
+        margin: 0 50px 60px 15px;
+    }
+    .contact-slogan {
+        padding: 0 15px 30px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .tab-content ul li {
         margin: 0 15px;
@@ -314,6 +319,10 @@ li>p.dates-area {
         font-style: normal;
         font-stretch: normal;
     }
+    .city-area {
+        width: 100%;
+        height: 213px;
+    }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 640px) {
@@ -333,12 +342,18 @@ li>p.dates-area {
         height: 30px;
         margin: 30px 0 0 30px;
     }
-    .contact-title,
+    .contact-title {
+        padding: 0;
+        margin: 0 0 80px 123px;
+    }
     .contact-slogan {
-        margin: 0 123px;
+        margin: 0 123px 40px;
+        padding: 0;
+        font-size: 21px;
+        line-height: 30px;
     }
     .tabs-wrapper {
-        margin: 0 123px 40px;
+        margin: 0 108px 40px;
     }
     .blocks-first,
     .carrers-area {
@@ -377,6 +392,64 @@ li>p.dates-area {
     .md-hide,
     .lg-hide {
         display: none
+    }
+    h2.main-title {
+        padding: 38px 0 39px;
+    }
+    .blocks-first li {
+        margin-bottom: 39px;
+    }
+    .blocks-first li:first-child {
+        margin: 0;
+    }
+    .blocks-first li>p.title {
+        margin: 5px 0 9px;
+    }
+    .info>p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .map-area {
+        width: 186px;
+        height: 123px;
+        overflow: hidden;
+    }
+    .blocks-first {
+        margin-bottom: 81px;
+    }
+    .carrers-area {
+        margin-bottom: 80px;
+    }
+    .carrers-area h2 {
+        margin-bottom: 20px;
+    }
+    .carrers-area li.slogan h3 {
+        margin-bottom: 40px;
+    }
+    .carrers-area>li>p.title {
+        margin-bottom: 10px;
+    }
+    .carrers-area>li>p.short-content { 
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .carrers-area>li>p+p {
+        margin-bottom: 20px;
+    }
+    .our-team-area h2 {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 56px;
+    }
+    .our-team-area>li>p.content-toggle {
+        padding: 36px 0;
+        line-height: 24px;
+    }
+    .sm-hide {
+		display: none;
+	}
+	.sm-show {
+		display: block;
     }
 }
 
